@@ -1,0 +1,55 @@
+/**
+Ovveriding bootstrap style
+*/
+
+@import "./content-style.css";
+:root{
+--navbar-height: 56px;
+--footer-height: 72px;
+}   
+
+.olaf{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background: #f1ccf1;
+}
+.custom-bs-navbar{
+    background: #ffffff;
+    min-height: var(--navbar-height);
+}
+
+.my-footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: var(--footer-height);
+    background: rgb(136, 130, 133);
+    padding: 24px 24px
+}
+.my-footer address{
+    color: rgb(243, 238, 238);
+    margin: auto;
+}
+.content-section{
+    min-height: calc(100% - var(--navbar-height) - var(--footer-height));
+}
+.batu{
+    text-align: center;
+    font-size: x-large;
+}
+.elsa{
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+}
+.hmm{
+    font-size: large;
+}
